@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Prova de Argumentos</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@500&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="webroot/css/style.css">
+		<!--<link rel = "shortcut icon" type = "imagem/x-icon" href = "webroot/img/icon.ico"/>-->
+	</head>
+	<body>
+		<div class='header'>
+			<h1>Prova de Argumentos</h1>
+			<textarea disabled id="textarea">Prova de Argumentos, por Marlon D. Angonese</textarea>
+		</div>
+		<div class="main">
+			<div class="painelleft">
+				<div id="dashboard">
+					<table id="table-dashboard">
+					</table>
+				</div>
+				<input class="input-textbox" placeholder="Insira aqui" type="text" id="textbox">
+				<button class="button-left-remove" id="remover" onclick="remover_tr();">Remover</button>
+				<button class="button-left-premisse" id="premissa" onclick="premissa();">Premissa</button>
+			</div>
+			<div class="painelright">
+				<button class="button-right" id="hipotese_pc" onclick="hipotese_pc();">H PC</button>
+				<button class="button-right" id="hipotese_raa" onclick="hipotese_raa();">H RAA</button>
+				<button class="button-right" id="inclusao_e" onclick="inclusao_e();">^I</button>
+				<button class="button-right" id="exclusao_e" onclick="exclusao_e();">^E</button>
+				<button class="button-right" id="inclusao_ou" onclick="inclusao_ou();">vI</button>
+				<button class="button-right" id="exclusao_ou" onclick="exclusao_ou();">vE</button>
+				<button class="button-right" id="modus_ponens" onclick="modus_ponens();">MP</button>
+				<button class="button-right" id="inclusao_se" onclick="inclusao_se();">→I</button>
+				<button class="button-right" id="inclusao_sse" onclick="inclusao_sse();">↔I</button>
+				<button class="button-right" id="exclusao_sse" onclick="exclusao_sse();">↔E</button>
+				<button class="button-right" id="inclusao_notnot" onclick="inclusao_notnot();">¬¬I</button>
+				<button class="button-right" id="exclusao_notnot" onclick="exclusao_notnot();">¬¬E</button>
+				<button class="button-right" id="inclusao_not" onclick="inclusao_not();">¬I</button>
+				<button class="button-right" id="exclusao_not" onclick="exclusao_not();">¬E</button>
+				<button class="button-right" id="modus_tollens" onclick="modus_tollens();">MT</button>
+				<button class="button-right" id="silogismo_disjuntivo" onclick="silogismo_disjuntivo();">DS</button>
+
+				<p>Selecione com clique duplo: </p>		
+				<div id="choice-dashboard">
+					<table id="choice-table-dashboard">
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+<script type="text/javascript" src="webroot/js/table.js"></script>
+<script type="text/javascript" src="webroot/js/validator.js"></script>

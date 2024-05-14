@@ -1,0 +1,277 @@
+.header{
+	background: #5f4eb5;
+	padding: 1% 0;
+}
+body{
+	margin: 0;
+	width: 100%;
+}
+
+h1{
+	margin: 0;
+	padding-left: 5%;
+	margin-top: 1%;
+	color: white;
+	font-family: Courier;
+	font-size: 300%;
+	text-shadow: 2px 2px 8px black;
+	float: left;
+	width: 45%;
+	height: 100px;
+}
+
+textarea {
+	resize: none;
+	font-family: 'Inconsolata';
+	font-size: 18px;
+	width: 45%;
+	height: 60px;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+textarea:disabled {
+	background-color: white;
+}
+
+p {
+	font-size: 18px;
+	font-family: Arial;
+}
+
+p#text-alert {
+	font-size: 18px;
+	margin: 0;
+	font-weight: bold;
+}
+
+.main{
+	width: 90%;
+	margin: 2% auto;
+}
+.painelleft{
+	float: left;
+	width: 65%;
+}
+
+#dashboard {
+	width:100%;
+	border: 2.5px solid;
+	height: 390px;
+	overflow-y: scroll;
+	box-shadow: 2px 2px 5px 0 black;
+}
+
+#table-dashboard {
+	width: 100%;
+	border-spacing: 0;
+	font-family: Courier, Arial;
+	font-size: 20px;
+	table-layout: fixed;
+}
+
+#table-dashboard td{
+	padding: 10px;
+}
+
+#table-dashboard td:first-child{
+	width: 7%;
+}
+
+#table-dashboard td:nth-child(2){
+	min-width: 70%;
+	overflow-x: auto;
+	white-space: nowrap;
+}
+
+#table-dashboard td:last-child{
+	width: 20%;
+}
+
+/**Cor quando passar por cima**/
+#table-dashboard tr:hover td{
+  background-color: #abfeff;
+  cursor: pointer;
+}
+
+/**Cor quando selecionado**/
+#table-dashboard tr.selecionado td{
+  background-color: #5193fc;
+  color: white;
+}
+
+#choice-dashboard{
+  width: 100%;
+  margin: 3% auto;
+  border: 2.5px solid;
+  margin-bottom: 20px;
+  height: 145px;
+  box-shadow: 2px 2px 5px 0 black;
+}
+
+#choice-table-dashboard{
+  width:100%;
+  border-spacing: 0;
+  font-size: 20px;
+  font-family: Courier;
+  table-layout: fixed;
+}
+
+#choice-table-dashboard td{
+  /*width: calc(3.125% / 3);*/
+  padding: 5px;
+}
+#choice-table-dashboard td:first-child{
+  width: 10%;
+}
+#choice-table-dashboard td:nth-child(2){
+  min-width: 70%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+#choice-table-dashboard td:last-child{
+  width: 30%;
+}
+#choice-table-dashboard tr{
+  cursor: pointer; /**importante para não mostrar cursor de texto**/
+}
+
+#choice-table-dashboard tr:hover td{
+  background-color: #cfffe8;
+}
+
+/**Cor quando selecionado**/
+#choice-table-dashboard tr.choiced td{
+  background-color: #067a00;
+  color: white;
+}
+
+.painelright{
+	float: right;
+	width:33%;
+}
+
+button.button-right {
+	font-family: 'Newsreader', Arial;
+	font-size: 100%;
+	width: 22%;
+	margin: 1%;
+	padding: 2.5% 0;
+	border-radius: 10px;
+	border: 1px solid;
+	box-shadow: 2px 2px 5px 0 black;
+	background-color: #fff;
+}
+
+button.button-right:hover {
+	cursor: pointer;
+	background-color: rgb(219, 219, 219);
+}
+
+button:focus {
+	outline: 0;
+}
+
+button.button-left-remove {
+	font-family: 'Newsreader', Arial;
+	font-size: 120%;
+	width: 20%;
+	margin: 1%;
+	padding: 1.5% 0;
+	border: 0.5px solid;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px 0 black;
+	color: black;
+	background-color: #fff;
+}
+
+button.button-left-premisse {
+	font-family: 'Newsreader', Arial;
+	color: #fff;
+	font-size: 120%;
+	width: 20%;
+	margin: 1%;
+	padding: 1.5% 0;
+	border: 0.5px solid;
+	border-color: black;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px 0 black;
+	background-color: #5f4eb5;
+}
+
+button.button-left-remove:hover{
+	background-color: rgb(219, 219, 219);
+	cursor: pointer;
+}
+
+button.button-left-premisse:hover{
+	background-color: #4a3e85;
+	cursor: pointer;
+}
+
+.input-textbox {
+	font-family: 'Newsreader', Arial;
+	font-size: 21px;
+	width: 52%;
+	padding: 1.1% 1.1% 1.1% 1.1%;
+	margin-top: 2%;
+	border: 2px solid;
+	bottom: 1%;
+	box-shadow: 2px 2px 5px 0 black;
+}
+
+.input-textbox:focus {
+	outline: 0;
+}
+
+/*ScrollBar*/
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px grey; 
+	border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #5f4eb5; 
+	border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #4a3e85; 
+}
+
+#alert.hide{
+	opacity: 0;
+	pointer-events: none;
+}
+
+/* The alert message box */
+#alert {
+	width: 60%;
+	padding: 20px;
+	background-color: #e63247; /* Red */
+	color: white;
+	position: absolute;
+	text-align: center;
+	top: 5%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px 0 black;
+	opacity: 1;
+	transition: opacity .3s linear;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+	color: black;
+}
